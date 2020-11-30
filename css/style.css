@@ -1335,6 +1335,10 @@ figcaption:after {
     display: none;
   }
 
+  .header {
+    height: 36px;
+  }
+
   .menu {
     display: none;
     opacity: 0;
@@ -1475,6 +1479,7 @@ figcaption:after {
 
   .main {
     padding-top: 40px;
+    background-position: top 0 right -68px;
   }
 
   .inspire-wrap {
