@@ -447,7 +447,7 @@ template {
 
 .slick-next {
   right: -40px;
-  background-image: url("../../img/svg/arrow-right.svg");
+  background-image: url("../img/svg/arrow-right.svg");
 }
 
 .header {
