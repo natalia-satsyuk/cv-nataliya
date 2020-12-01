@@ -1108,19 +1108,19 @@ figcaption:after {
 }
 
 .contacts__main-item.phone:before {
-  background-image: url("../../img/svg/call.svg");
+  background-image: url("../img/svg/call.svg");
 }
 
 .contacts__main-item.email:before {
-  background-image: url("../../img/svg/mail.svg");
+  background-image: url("../img/svg/mail.svg");
 }
 
 .contacts__main-item.location:before {
-  background-image: url("../../img/svg/location.svg");
+  background-image: url("../img/svg/location.svg");
 }
 
 .contacts__main-item.birthday:before {
-  background-image: url("../../img/svg/birthday.svg");
+  background-image: url("../img/svg/birthday.svg");
 }
 
 .contacts__main-item a {
