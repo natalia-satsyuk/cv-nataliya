@@ -16,16 +16,371 @@
 <body>  
     <div class="for-overlay"></div> 
 
-    @@include('modules/_header.html')
-    @@include('modules/_main.html')
-    @@include('modules/_experience.html')
-    @@include('modules/_inspire.html')
-    @@include('modules/_skills.html')
-    @@include('modules/_projects.html')
-    @@include('modules/_education.html')
-    @@include('modules/_job.html')
-    @@include('modules/_contacts.html')
-    @@include('modules/_footer.html') 
+    <header class='header'>
+    <div class="container">
+        <nav class="navigation">
+            <button class="menu-icon">
+                <img src='img/svg/menu.svg' alt="menu">
+            </button>
+            <ul class="menu" id="mainNav">
+                <li class="menu__item"><a href="#main" class="menu__link active">Home</a></li>
+                <li class="menu__item"><a href="#experience" class="menu__link" data-id-nav="experience">Experience</a></li>
+                <li class="menu__item"><a href="#inspires" class="menu__link" data-id-nav="inspires">Inspires</a></li>
+                <li class="menu__item"><a href="#skills" class="menu__link" data-id-nav="skills">Skills</a></li>
+                <li class="menu__item"><a href="#projects" class="menu__link" data-id-nav="projects">Projects</a></li>
+                <li class="menu__item"><a href="#education" class="menu__link" data-id-nav="education">Education</a></li>
+                <li class="menu__item"><a href="#jobs" class="menu__link">Jobs</a></li>
+                <li class="menu__item"><a href="#contacts" class="menu__link" data-id-nav="contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>       
+</header>
+    <div class="main vertical-center" id="main">
+    <div class="container">        
+        <h1 class ="title-main">Hi guys<br>
+            My name is Nataliya<br>
+            I'm a frontend developer</h1>
+        <p class="title-second">Relax for a few minutes,<br>
+            take a sip of coffee and look at my site</p>  
+        <a href="#experience" class="down menu__link"></a>
+    </div>  
+</div>
+    <div class="experience-wrap pad-block pad-block--pad-0 bg-gray" id="experience">
+    <div class="container container--left-pad">
+        <div class="vertical-block">
+            <p class="vertical-block__text">experience</p>
+        </div>
+
+        <div class="box-shadow-block box-shadow-block--pad-all card-hover wide-mobile bg-white">
+            <h2 class="title-second">My experience in frontend-developing</h2>
+            <ul class="experience">
+                <li class="experience__item list-item">Hand-coded landing pages, promo-pages, email-letters, different components for sites</li>
+                <li class="experience__item list-item">Built sites to work across browsers and device platforms (desktop, tablet, smartphone)</li>
+                <li class="experience__item list-item">Coded front-end responsive websites and pages</li>
+                <li class="experience__item list-item">Refactored code</li>
+                <li class="experience__item list-item">Worked with someone else’s code and plugins</li>
+                <li class="experience__item list-item">Worked in geographically distributed teams</li>            
+            </ul>
+        </div>        
+    </div>
+</div>
+
+
+    <div class="inspire-wrap pad-block" id="inspires">
+    <div class="container">
+        <h2 class="title-second title-second--invert">It inspires me</h2>
+
+        <div class="inspire-slider">
+            <div class="inspire-slider__item">
+                <p>Gallons of tea</p>
+            </div>
+            <div class="inspire-slider__item">
+                <p>Cozy arm-chair</p>
+            </div>
+            <div class="inspire-slider__item">
+                <p>Old good rock</p>
+            </div>
+            <div class="inspire-slider__item">
+                <p>My dog Richard</p>
+            </div>
+            <div class="inspire-slider__item">
+                <p>Mountain hiking</p>
+            </div>
+            <div class="inspire-slider__item">
+                <p>Bicycle riding</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="skills-wrap pad-block pad-block--pad-0" id="skills">
+    <div class="container container--left-pad">
+        <div class="vertical-block">
+            <p class="vertical-block__text">skills</p>
+        </div>
+
+        <div class="skills wide-mobile">
+            <div class="skills__part box-shadow-block card-hover bg-gray">
+                <h2 class="title-second">Strong knowledge of</h2>
+                <ul class="skills__list">
+                    <li class="skills__item list-item">HTML, CSS  (including HTML5, CSS3)</li>
+                    <li class="skills__item list-item">SСSS</li>
+                    <li class="skills__item list-item">BEM</li>
+                    <li class="skills__item list-item">Adaptive and responsive design approach</li>
+                    <li class="skills__item list-item">Cross-browser/platform issues</li>
+                    <li class="skills__item list-item">GIT</li>     
+                    <li class="skills__item list-item">Avocode, Zeplin, Figma, Photoshop for coder</li>       
+                </ul>
+            </div>
+            <div class="skills__part box-shadow-block card-hover bg-gray">
+                <h2 class="title-second">Experience with</h2>
+                <ul class="skills__list">
+                    <li class="skills__item list-item">JavaScript, JQuery, Vue.js, Twig</li>
+                    <li class="skills__item list-item">Gulp, yarn</li>
+                    <li class="skills__item list-item">Bootstrap, Bulma</li>
+                    <li class="skills__item list-item">Tailwind</li>                               
+                </ul>
+            </div>
+        </div>        
+    </div>
+</div>
+
+
+    <section class="projects-wrap pad-block" id="projects">
+    <div class="container container--left-pad">
+        <div class="vertical-block">
+            <p class="vertical-block__text">projects</p>
+        </div>
+        
+         <h2 class="title-second">Some of my projects</h1>
+        
+        <div class="projects">
+            <figure class="projects__item box-shadow-block">
+                <picture class="img-poly projects__img">
+                    <source srcset="img/pics/home.webp" type="image/webp">
+                    <source srcset="img/pics/home.jpg">
+        
+                    <img class="projects__img" src='img/pics/home.jpg' alt="home">
+                </picture>
+                <figcaption>
+                    <p>Home stuff</p>
+                    <a href="https://natalia-satsyuk.github.io/Home/" target="_blank"></a>
+                </figcaption>
+            </figure> 
+
+            <figure class="projects__item box-shadow-block">
+                <picture class="img-poly projects__img">
+                    <source srcset="img/pics/glasses.webp" type="image/webp">
+                    <source srcset="img/pics/glasses.jpg">
+                
+                    <img class="projects__img" src='img/pics/glasses.jpg' alt="glasses">
+                </picture>
+                <figcaption>
+                    <p>Glasses</p>
+                    <a href="https://natalia-satsyuk.github.io/glasses/" target="_blank"></a>
+                </figcaption>
+            </figure>                
+                        
+            <figure class="projects__item box-shadow-block">
+                <picture class="img-poly projects__img">
+                    <source srcset="img/pics/window.webp" type="image/webp">
+                    <source srcset="img/pics/window.jpg">
+        
+                    <img class="projects__img" src='img/pics/window.jpg' alt="windows">
+                </picture>
+                <figcaption>
+                    <p>Windows</p>
+                    <a href="https://natalia-satsyuk.github.io/lviv-window/" target="_blank"></a>
+                </figcaption>
+            </figure>                
+                        
+            <figure class="projects__item box-shadow-block">
+                <picture class="img-poly projects__img">
+                    <source srcset="img/pics/spare-parts.webp" type="image/webp">
+                    <source srcset="img/pics/spare-parts.jpg">
+        
+                    <img class="projects__img" src='img/pics/spare-parts.jpg' alt="spare parts">
+                </picture>
+                <figcaption>
+                    <p>Spare parts</p>
+                    <a href="https://natalia-satsyuk.github.io/resurs/" target="_blank"></a>
+                </figcaption>
+            </figure>                
+        
+            <figure class="projects__item box-shadow-block">
+                <picture class="img-poly projects__img">
+                    <source srcset="img/pics/mountain.webp" type="image/webp">
+                    <source srcset="img/pics/mountain.jpg">
+        
+                    <img class="projects__img" src='img/pics/mountain.jpg' alt="mountain">
+                </picture>
+                <figcaption>
+                    <p>Mountain</p>
+                    <a href="https://natalia-satsyuk.github.io/Mountain-landing/" target="_blank"></a>
+                </figcaption>
+            </figure>                
+                        
+            <figure class="projects__item box-shadow-block">
+                <picture class="img-poly projects__img">
+                    <source srcset="img/pics/studio.webp" type="image/webp">
+                    <source srcset="img/pics/studio.jpg">
+        
+                    <img class="projects__img" src='img/pics/studio.jpg' alt="studio">
+                </picture>
+                <figcaption>
+                    <p>Smart Agency</p>
+                    <a href="https://natalia-satsyuk.github.io/Smart-Agency/" target="_blank"></a>
+                </figcaption>
+            </figure>  
+        </div>  
+    </div>
+</section>
+    <div class="education-wrap pad-block pad-block--pad-0 bg-gray" id="education">
+    <div class="container container--left-pad">
+        <div class="vertical-block">
+            <p class="vertical-block__text">education</p>
+        </div>
+
+        <div class="box-shadow-block box-shadow-block--pad-all wide-mobile bg-white">
+            <h2 class="title-second">Educational qualification</h2>
+
+            <ul class="education">
+                <li class="education__item list-item">2020 Coursera - University of California, Davis "Search Engine Optimization Fundamentals" 
+                    <span class="education__show">(watch sertificate)</span> 
+
+                    <div class="education__sertificate">                          
+                        <div class="for-overlay">
+                            <div class='main-to-show'>
+                                <picture class="img-poly">
+                                    <source srcset="img/pics/sertificate-seo.webp" type="image/webp">
+                                    <source srcset="img/pics/sertificate-seo.jpg">      
+                        
+                                    <img src='img/pics/sertificate-seo.jpg' alt="seo sertificate">
+                                </picture>
+                
+                                <button class="close" aria-label="close">
+                                    <img src="img/svg/close.svg" alt="close">
+                                </button>
+                            </div>
+                        </div>                                 
+                    </div>                             
+                </li>
+
+                <li class="education__item list-item">2020 Coursera - University of California, Irvine  "Time Management for Personal &amp; Professional Productivity" 
+                    <span class="education__show">(watch sertificate)</span> 
+
+                    <div class="education__sertificate">                          
+                        <div class="for-overlay">
+                            <div class='main-to-show'>
+                                <picture class="img-poly">
+                                    <source srcset="img/pics/sertificate-tm.webp" type="image/webp">
+                                    <source srcset="img/pics/sertificate-tm.jpg">      
+                        
+                                    <img src='img/pics/sertificate-tm.jpg' alt="time-management sertificate">
+                                </picture>
+                
+                                <button class="close" aria-label="close">
+                                    <img src="img/svg/close.svg" alt="close">
+                                </button>
+                            </div>
+                        </div>                                 
+                    </div>                             
+                </li>
+
+                <li class="education__item list-item">2016 online-course "Ninja-frontend” from "ExNation" 
+                    <span class="education__show">(watch sertificate)</span> 
+
+                    <div class="education__sertificate">                          
+                        <div class="for-overlay">
+                            <div class='main-to-show'>
+                                <picture class="img-poly">
+                                    <source srcset="img/pics/sertificate-nf.webp" type="image/webp">
+                                    <source srcset="img/pics/sertificate-nf.jpg">      
+                        
+                                    <img src='img/pics/sertificate-nf.jpg' alt="ninja-frontend sertificate">
+                                </picture>
+                
+                                <button class="close" aria-label="close">
+                                    <img src="img/svg/close.svg" alt="close">
+                                </button>
+                            </div>
+                        </div>                                 
+                    </div>                             
+                </li>
+
+                <li class="education__item list-item">2016 VNPU JavaScript courses</li>
+                <li class="education__item list-item">2016 VNPU HTML, CSS, Web-design courses</li>      
+            </ul>                       
+        </div>       
+    </div>
+</div>
+    <div class="job-wrap pad-block pad-block--pad-0 bg-gray" id="jobs">
+    <div class="container container--left-pad">
+        <div class="vertical-block">
+            <p class="vertical-block__text">jobs</p>
+        </div>
+
+        <div class="box-shadow-block box-shadow-block--pad-all wide-mobile bg-white">
+            <div class="job-helper">
+                <div class="dropdown">
+                    <div class="dropdown__click" id="dropdown-btn">
+                        <h2 class="title-second">Work experience</h2>
+                        <button class="dropdown__button">
+                            <img src='img/svg/arrow.svg' alt="arrow">
+                        </button>
+                    </div>
+                </div>
+        
+                <ul class="job dropdown__block">
+                    <li class="job__item list-item">2020-till now frontend developer at <b>TapOk</b></li>
+                    <li class="job__item list-item">2017-2020 &nbsp;&nbsp;&nbsp;&nbsp;frontend developer at <b>LetyShops</b></li>
+                    <li class="job__item list-item">2016-2017 &nbsp;&nbsp;&nbsp;&nbsp;frontend-developer at <b>freelance</b></li>         
+                </ul>
+    
+                <div class="job__call-to-action">
+                    <div class="arrow"></div>
+                    <p>Click to watch</p>
+                </div>
+            </div>
+        </div>                
+    </div>
+</div>
+    <div class="contacts-wrap pad-block" id="contacts">
+    <div class="container container--left-pad">
+
+        <div class="vertical-block">
+            <p class="vertical-block__text">contacts</p>
+        </div>        
+
+        <div class="contacts">
+            <div class="contacts__column contacts--grow-1">
+                <h2 class="title-second">My contacts</h2>
+
+                <div class="contacts__info marg-bot-48">
+                    <ul class="contacts__main">
+                        <li class="contacts__main-item list-item phone"><a href="tel:380-97-504-8008">+380(97)504-8008</a></li>
+                        <li class="contacts__main-item list-item email"><a mailto="natalia.satsyuk@gmail.com">natalia.satsyuk@gmail.com</a></li>
+                        <li class="contacts__main-item list-item location">Vinnytsia, Ukraine</li>
+                        <li class="contacts__main-item list-item birthday">born in 19.04.1985</li>                               
+                    </ul>
+                    <div class="contacts__social"></div>
+                </div>
+
+                <p class="marg-bot-48">If very briefly: I adore bicycle riding, mountain hiking and river rafting. I really love travelling - it helps to color my life.</p>
+
+                <p class="marg-bot-18 fw-bold">Find me in socials:</p>
+
+                <div class="contacts__social">                    
+                    <a class="contacts__social-item fb" href="https://www.facebook.com/nata.link.92" target="_blank">
+                        <img src='img/svg/fb.svg' alt="fb">
+                    </a>
+                    <a class="contacts__social-item linkedin" href="https://www.linkedin.com/in/nataliya-satsyuk-381077118" target="_blank">
+                        <img src='img/svg/linkedin.svg' alt="linkedin">
+                    </a>   
+                    <a class="contacts__social-item github" href="https://github.com/natalia-satsyuk/" target="_blank">
+                        <img src='img/svg/github.svg' alt="github">
+                    </a>               
+                    <a class="contacts__social-item instagram" href="https://www.instagram.com/nataliyasatsyuk/" target="_blank">
+                        <img src='img/svg/instagram.svg' alt="instagram">
+                    </a>
+                </div>
+            </div>            
+            
+            <div class="contacts__pic box-shadow-block card-hover">
+                <picture class="img-poly">
+                    <source srcset="img/pics/me@2x.webp" type="image/webp">
+                    <source srcset="img/pics/me@2x.jpg">   
+        
+                    <img src='img/pics/me@2x.jpg' alt="author photo">
+                </picture>
+            </div>
+        </div>
+    </div>
+</div> 
+    <div class="footer">
+    <div class="container">
+        <p>Developed and designed by Nataliya Satsyuk</p>
+    </div>
+</div> 
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
