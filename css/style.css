@@ -447,7 +447,7 @@ template {
 
 .slick-next {
   right: -40px;
-  background-image: url("../../img/svg/arrow-right.svg");
+  background-image: url("../img/svg/arrow-right.svg");
 }
 
 .header {
@@ -542,6 +542,7 @@ template {
   padding-top: 66px;
   height: 100vh;
   min-height: 680px;
+  background-color: #a0aea0;
   background-image: url("../img/pics/lamp.jpg");
   background-image: -webkit-image-set(url("../img/pics/lamp.webp") 1x);
   background-size: cover;
@@ -1108,19 +1109,19 @@ figcaption:after {
 }
 
 .contacts__main-item.phone:before {
-  background-image: url("../../img/svg/call.svg");
+  background-image: url("../img/svg/call.svg");
 }
 
 .contacts__main-item.email:before {
-  background-image: url("../../img/svg/mail.svg");
+  background-image: url("../img/svg/mail.svg");
 }
 
 .contacts__main-item.location:before {
-  background-image: url("../../img/svg/location.svg");
+  background-image: url("../img/svg/location.svg");
 }
 
 .contacts__main-item.birthday:before {
-  background-image: url("../../img/svg/birthday.svg");
+  background-image: url("../img/svg/birthday.svg");
 }
 
 .contacts__main-item a {
@@ -1335,6 +1336,10 @@ figcaption:after {
     display: none;
   }
 
+  .header {
+    height: 36px;
+  }
+
   .menu {
     display: none;
     opacity: 0;
@@ -1351,14 +1356,19 @@ figcaption:after {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    width: 44px;
-    height: auto;
+    width: 40px;
+    height: 30px;
     position: relative;
     z-index: 2;
   }
 
   .navigation {
     padding: 4px 0;
+  }
+
+  .main {
+    background-image: url("../img/pics/lamp-small.jpg");
+    background-image: -webkit-image-set(url("../img/pics/lamp-small.webp") 1x);
   }
 
   .main {
@@ -1374,6 +1384,8 @@ figcaption:after {
 
   .inspire-wrap {
     height: 290px;
+    background-image: url("../img/pics/lines-vertical-small.jpg");
+    background-image: -webkit-image-set(url("../img/pics/lines-vertical-small.webp") 1x);
   }
 
   .inspire-slider {
@@ -1383,6 +1395,11 @@ figcaption:after {
 
   .inspire-slider__item p {
     width: 90%;
+  }
+
+  .projects-wrap {
+    background-image: url("../img/pics/squares-small.jpg");
+    background-image: -webkit-image-set(url("../img/pics/squares-small.webp") 1x);
   }
 
   .projects .box-shadow-block {
@@ -1429,16 +1446,21 @@ figcaption:after {
     border-left-width: 3px;
   }
 
+  .contacts-wrap {
+    background-image: url("../img/pics/lines-small.jpg");
+    background-image: -webkit-image-set(url("../img/pics/lines-small.webp") 1x);
+  }
+
   .contacts__pic {
     position: absolute;
-    right: -24px;
+    right: 0px;
     top: -18px;
     width: 200px;
     min-width: 200px;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .container {
     max-width: 480px;
     padding: 0 20px;
@@ -1467,6 +1489,7 @@ figcaption:after {
 
   .menu-icon {
     width: 38px;
+    height: 28px;
   }
 
   .navigation.open .menu {
@@ -1475,6 +1498,7 @@ figcaption:after {
 
   .main {
     padding-top: 40px;
+    background-position: top 0 right -24px;
   }
 
   .inspire-wrap {
@@ -1518,5 +1542,12 @@ figcaption:after {
 
   .footer {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    padding-top: 40px;
+    background-position: top 0 right -68px;
   }
 }
